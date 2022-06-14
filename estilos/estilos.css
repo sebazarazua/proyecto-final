@@ -1,0 +1,353 @@
+/*mobile*/
+*{
+    font-style: italic;
+background-color: rgb(0, 0, 67);
+}
+body{
+    display: grid;
+    grid-template-areas:
+    "footer"
+    "section"
+    "div"
+    "header"
+    ;
+}
+header{
+    grid-area: header;
+}
+.titulo{
+    grid-area: titulo;
+}
+
+footer{
+    grid-area: footer;
+}
+.foto1{
+    grid-area: foto1;
+}
+.historia1{
+    grid-area: historia1;
+}
+
+.historia2{
+    grid-area: historia2;
+}
+.foto2{
+    grid-area: foto2;
+}
+.arqueros{
+    grid-area: arqueros;
+    justify-self: center;
+    
+}
+.defensores{
+    grid-area: defensores;
+   justify-self: center;
+}
+.medios{
+    grid-area: medios;
+    justify-self: center;
+}
+.delanteros{
+    justify-self: center;
+    grid-area: delanteros;
+}
+.subdef{
+    grid-area: subdef;
+}
+.subarq{
+    grid-area: subarq;
+}
+.submed{
+    grid-area: submed;
+
+}
+.subdel{
+    grid-area: subdel;
+}
+.titulos{
+    text-align: center;
+    grid-area: div;
+}
+table{
+    grid-area: div;
+}
+.padre1{
+  
+    display: flex;
+    justify-self:center;
+    height: 52px;
+    width: 100%;
+    
+
+}
+.hijo1{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-self: center;
+    list-style: none;
+    
+}
+.hijo1 li a{
+    color:yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 400;
+    text-transform: uppercase;
+   
+   text-decoration: none;
+}
+h1{
+    font-size: 70px;
+    background-color: rgb(255, 255, 0.5);
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    background-color: rgb(255, 255, 0);
+    text-align: center;
+    text-transform: uppercase;
+}
+.ulredes{
+    display: inline-flex;
+    justify-items: center;
+}
+.liredes{
+    list-style: none;
+} 
+
+.hijo1 li a:hover{
+    color:rgb(249, 255, 170);
+}
+
+h3{
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+h4{
+    text-transform: uppercase;
+    background-color: yellow;
+    color:blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+h5{
+    color: yellow;
+    text-transform: uppercase;
+font-size: 20px;
+text-align: center;
+
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+}
+.foto2 img{
+    height: 350px;
+    width: 350px;
+}
+.nav2{
+    text-align: center; 
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+.gridc{
+    grid-area: div;
+}
+
+.gridc{
+    display:grid ;
+    grid-template-areas:
+    "footer"
+    "titulo"
+    "historia1"
+    "foto1"
+"subtitulo"    
+    "historia2"
+    "foto2"
+    "header"
+    ; 
+    grid-template-columns:100% ;
+    grid-template-rows:50px auto auto auto auto auto auto 50px  ;
+    gap: 5px;
+    }
+.foto1{
+    text-align: center;
+}
+.foto2{
+    text-align: center;
+}
+.planteltitular{
+ 
+    display: grid;
+   grid-template-areas: 
+   "subarq"
+   "arqueros"
+   "subdef"
+   "defensores"
+   "submed"
+   "medios"
+   "subdel"
+   "delanteros"
+   ;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    gap: 5px; 
+}
+
+
+
+
+
+
+
+
+/*desktop*/
+@media (min-width:1024px){
+img{
+    width: auto;
+    height: auto;
+}
+.section{
+    text-align: center;
+    grid-area: section;
+}
+
+
+
+
+.padre1{
+   display: flex;
+   justify-content: start; 
+   background-color: none; 
+}
+.hijo1{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    background-color: none;
+    
+}
+.hijo1 li a{
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+   
+
+}
+.hijo1 li a:hover{
+    color:rgb(249, 255, 170);
+}
+
+.plantel{
+    text-align: center;
+    grid-area: section;
+}
+
+.titulos{
+    text-align: center;
+    grid-area: div;
+}
+.historia{
+    text-align: center;
+}
+
+.gridc{
+display:grid ;
+grid-template-areas:
+"header header header header"
+"titulo titulo titulo titulo"
+"foto1 historia1 historia1 historia1"
+"subtitulo subtitulo subtitulo subtitulo"
+"historia2 historia2 historia2 foto2"
+"footer footer footer footer"
+; 
+grid-template-columns: auto auto auto auto;
+grid-template-rows: 50px auto auto auto auto 50px;
+gap: 5px;
+}
+
+.phistoria1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align:left;
+    margin-left: 15px;
+}
+.phistoria2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: left;
+    margin-right: 15px;
+}
+.subtitulo{
+    grid-area: subtitulo;
+}
+.sub{
+    text-transform: uppercase;
+    background-color: yellow;
+    color:rgb(0, 0, 108);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    height: 25px;
+    justify-content: center;
+}
+.planteltitular{
+   
+    display: grid;
+   grid-template-areas: 
+   "subarq"
+   "arqueros"
+   "subdef"
+   "defensores"
+   "submed"
+   "medios"
+   "subdel"
+   "delanteros"
+   ;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    gap: 5px; 
+}
+
+
+
+body{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "section"
+    "div"
+    "footer"
+    ;
+}
+}
