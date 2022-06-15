@@ -14,6 +14,7 @@ body{
 }
 header{
     grid-area: header;
+    
 }
 .titulo{
     grid-area: titulo;
@@ -188,7 +189,7 @@ p{
     "header"
     ; 
     grid-template-columns:100% ;
-    grid-template-rows:50px auto auto auto auto auto auto 50px  ;
+    grid-template-rows:50px auto auto auto auto auto auto auto  ;
     gap: 5px;
     }
 .foto1{
@@ -289,7 +290,7 @@ grid-template-areas:
 "footer footer footer footer"
 ; 
 grid-template-columns: auto auto auto auto;
-grid-template-rows: 50px auto auto auto auto 50px;
+grid-template-rows: auto auto auto auto auto auto;
 gap: 5px;
 }
 
