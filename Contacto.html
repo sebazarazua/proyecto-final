@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="estilos/estilos.css">
     <title>Document</title>
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-dark bg-dark">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="/index.html">HOME</a>
+				<a class="navbar-brand" href="index.html">HOME</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				  <span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 				  <ul class="navbar-nav">
 					<li class="nav-item">
-					  <a class="nav-link active" aria-current="page" href="/Historia.html">HISTORIA</a>
+					  <a class="nav-link active" aria-current="page" href="Historia.html">HISTORIA</a>
 					</li>
 					<li class="nav-item">
-					  <a class="nav-link" href="/Plantel.html">PLANTEL</a>
+					  <a class="nav-link active" href="Plantel.html">PLANTEL</a>
 					</li>
 					<li class="nav-item">
-					  <a class="nav-link" href="/Titulos.html">TITULOS</a>
+					  <a class="nav-link active" href="Titulos.html">TITULOS</a>
 					</li>
 					<li class="nav-item">
-					  <a class="nav-link" href="/Contacto.html">CONTACTO</a>
+					  <a class="nav-link active" href="Contacto.html">CONTACTO</a>
 					</li>
 				  </ul>
 				</div>
@@ -35,32 +36,32 @@
 		  </nav>
 		
 	</header>
-<h2>Complete con sus datos</h2>
-<table BORDER>
-	<tr>
-		<td ALIGN=center ROWSPAN=2 COLSPAN=2>Nombre y Apellido:
-		<input type="text" name=""required="" placeholder="Nombre y Apellido"></td>
-		<td><p>Estado Civil:</p>
-		<input type="radio" name="edo_civil" value="casado" required="">Casado<br>
-		<input type="radio" name="edo_civil" value="soltero" required="">Soltero<br></td>
-		<td><p>Numero de telefono:</p>
-		<input type="number" name=""required=""placeholder="Tu telefono"><br></td>
-	</tr>
-	<tr>
-		<td><p>Email:</p>
-		<input type="email" name=""placeholder="Tu email" required=""></td>
-		<td><p>Desea recibir el Newsletter ?</p>
-		<input type="checkbox" name="acepta" value="1" required=""></td>
-	</tr>
-	<tr>
-		<td ALIGN=center ROWSPAN=2 COLSPAN=2>Deje su comentario:</p>
-		<textarea value="Comentario" placeholder="Deja aquí tu comentario..."></textarea><br><br>
-		</td>
-		<td ALIGN=center ROWSPAN=2 COLSPAN=2><input type="submit" value="Enviar el Formulario"></td>
-	</tr>
-	<tr>
-	</tr>
- </table>
+	<div class="div-uno">
+		<h2 class="title">Contactanos</h2>
+		</div>
+		<div class="div-dos">
+		<div class="flex-container">
+			 <form class="form">
+				 <div class="form-section">
+					 <input type="text" class="form-input" placeholder="Escriba su mail">
+				 </div>
+				 <div class="form-section">
+					 <input type="email" class="form-input" placeholder="Escriba el asunto">
+				 </div>
+				 <div class="form-section">
+					 <textarea class="form-input" placeholder="Escriba su mensaje"></textarea>
+				 </div>
+				 <div class="form-section">
+					 <input type="submit" class="form-input">
+				 </div>
+				 </form>
+			 <div class="form-img">
+				 <div class="img-container"> 				
+					   <img src="https://www.pngplay.com/wp-content/uploads/6/Email-Logo-PNG-HD-Quality.png">		   
+				 </div>
+			 </div>
+			 </div>
+			 </div>
  <footer>
     <nav class="nav2">
 <ul class="ulredes">
@@ -72,5 +73,6 @@
 
     </nav>
  </footer> 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
