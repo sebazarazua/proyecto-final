@@ -1,0 +1,22 @@
+.nav2{
+    text-align: center;
+    ul{
+        display: inline-flex;
+        flex-direction: row;
+     justify-items: center;
+        gap: 10px;
+        margin-top: 25px;
+        
+        li{
+            list-style: none;
+                    
+            &:hover{
+                transform: scale(1.2);
+                transition-duration: 0.5s;
+            }
+        }
+
+        
+        
+    }
+}
