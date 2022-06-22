@@ -1,17 +1,17 @@
 
 
 *{
-    font-style:italic;
-    background-color: $azul;
+    font-style: normal;
+    background-color: rgb(0, 0, 67);
 }
 p{
     font-family: $fontp;
     font-size: 15px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 h1{
-    font-size: 70px;
+    font-size: 700px;
     background-color: $oro;
     text-transform: uppercase;
     font-family: $fontt;

@@ -1,6 +1,7 @@
 @import "general";
 @import "redes";
 @import "variables";
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 
 /*mobile*/
 
@@ -96,7 +97,7 @@ footer{
     grid-area: submed;
     div{
         grid-area: medios;
-    justify-self: center;
+        justify-self: center;
     }
 
 }
@@ -188,18 +189,18 @@ img{
 
 
 .gridc{
-display:grid ;
-grid-template-areas:
-"header header header header"
-"titulo titulo titulo titulo"
-"foto1 historia1 historia1 historia1"
-"subtitulo subtitulo subtitulo subtitulo"
-"historia2 historia2 historia2 foto2"
-"footer footer footer footer"
-; 
-grid-template-columns: auto auto auto auto;
-grid-template-rows: auto auto auto auto auto auto;
-gap: 5px;
+    display:grid ;
+    grid-template-areas:
+    "header header header header"
+    "titulo titulo titulo titulo"
+    "foto1 historia1 historia1 historia1"
+    "subtitulo subtitulo subtitulo subtitulo"
+    "historia2 historia2 historia2 foto2"
+    "footer footer footer footer"
+    ;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 5px;
 }
 
 
@@ -222,16 +223,16 @@ gap: 5px;
 .planteltitular{
    
     display: grid;
-   grid-template-areas: 
-   "subarq"
-   "arqueros"
-   "subdef"
-   "defensores"
-   "submed"
-   "medios"
-   "subdel"
-   "delanteros"
-   ;
+    grid-template-areas: 
+    "subarq"
+    "arqueros"
+    "subdef"
+    "defensores"
+    "submed"
+    "medios"
+    "subdel"
+    "delanteros"
+    ;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto auto auto auto auto;
     gap: 5px; 
@@ -329,7 +330,7 @@ body{
     height: 70px;
     width: 60px;
      &:hover{
-        transform: scale(1.08);
+        transform: scale(4.08);
         transition-duration: 0.35s;
      }
 }
