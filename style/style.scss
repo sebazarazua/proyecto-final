@@ -1,6 +1,6 @@
+@import "variables";
 @import "general";
 @import "redes";
-@import "variables";
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 
 /*mobile*/
@@ -45,7 +45,7 @@ footer{
 .historia1{
     grid-area: historia1;
     p{
-        font-family: $fontp;
+       
         font-size: 15px;
         color: white;
         text-align:left;
@@ -56,7 +56,7 @@ footer{
 .historia2{
     grid-area: historia2;
     p{
-        font-family: $fontp;
+        
         font-size: 15px;
         color: white;
         text-align: left;
@@ -211,7 +211,6 @@ img{
         text-transform: uppercase;
         background-color: $oro;
         color:$azul;
-        font-family: $fontp;
         font-weight: 600;
         font-size: 20px;
         text-align: center;
@@ -252,7 +251,8 @@ body{
 }
 
 .flex-container{
-	display:flex;
+	
+    display:flex;
     align-items:center;
     flex-wrap:wrap;
     justify-content:center;
@@ -289,7 +289,7 @@ body{
         resize:none;
     } 
     input[type="submit"]{
-        background-color:$oro;
+        background-color: $oro;
         border-bottom:none;
         padding:12px;
     }
@@ -301,7 +301,7 @@ body{
         border-top:3px solid ;
         border-color: $oro;
         background:transparent;
-        color:black;
+        color:rgb(255, 255, 255);
         text-transform: uppercase;
         &:focus{
             background:linear-gradient(to bottom,transparent,$orosec);
@@ -330,7 +330,7 @@ body{
     height: 70px;
     width: 60px;
      &:hover{
-        transform: scale(4.08);
+        transform: scale(1.08);
         transition-duration: 0.35s;
      }
 }
