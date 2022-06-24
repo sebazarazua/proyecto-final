@@ -157,6 +157,10 @@ img{
 .section{
     text-align: center;
     grid-area: section;
+    img{
+        height:400px; 
+        width:350px;
+    }
 }
 
 
