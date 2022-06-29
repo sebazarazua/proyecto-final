@@ -124,6 +124,7 @@ footer img {
   grid-area: historia2;
 }
 .historia2 p {
+  margin-left: 15px;
   font-size: 15px;
   color: white;
   text-align: left;
