@@ -93,48 +93,40 @@ header {
   grid-area: header;
 }
 
+.headershop {
+  grid-area: header;
+}
+
 .shop {
-  display: flex;
-  flex-direction: row;
-  height: auto;
-  width: auto;
-  justify-content: center;
+  grid-area: div;
 }
-.shop h3 {
-  grid-area: bs;
+
+.shop {
+  display: grid;
+  grid-template-areas: "camiseta titular" "camiseta blanca" "camiseta amarilla" "camiseta alternativa" "camiseta cuatro";
+  grid-template-columns: 50%;
+  grid-template-rows: auto auto auto auto auto;
+  grid: 5px;
 }
-.shop div {
-  grid-area: camiseta;
-  background-color: rgb(255, 255, 255);
-  margin: 5px;
-  height: 300px;
-  width: 200px;
-  border-radius: 5px;
-  border-color: #ffcc00;
+
+.camisetatitular {
+  grid-area: camiseta titular;
 }
-.shop div a {
-  color: rgb(0, 0, 74);
-  text-decoration: none;
-  background-color: #ffcc00;
-  font-weight: 800;
+
+.camisetaamarilla {
+  grid-area: camiseta amarilla;
 }
-.shop div button {
-  font-size: 30px;
-  margin-top: 28px;
-  margin-left: 15px;
-  border: rgb(0, 0, 0);
-  background-color: #ffcc00;
+
+.camisetablanca {
+  grid-area: camiseta blanca;
 }
-.shop div button:hover {
-  transform: scale(1.08);
-  transition-duration: 0.35s;
+
+.camisetaalternativa {
+  grid-area: camiseta alternativa;
 }
-.shop div img {
-  height: 200px;
-  width: 200px;
-  border-bottom: 5px;
-  border-color: #312f00;
-  background-color: white;
+
+.camisetacuatro {
+  grid-area: camiseta cuatro;
 }
 
 .titulo {
@@ -231,7 +223,7 @@ img {
   display: grid;
   grid-template-areas: "footer" "titulo" "historia1" "foto1" "subtitulo" "historia2" "foto2" "header";
   grid-template-columns: 100%;
-  grid-template-rows: 50px auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
   gap: 5px;
 }
 
@@ -272,7 +264,6 @@ img {
     width: auto;
     height: auto;
   }
-
   .gridc {
     display: grid;
     grid-template-areas: "header header header header" "titulo titulo titulo titulo" "foto1 historia1 historia1 historia1" "subtitulo subtitulo subtitulo subtitulo" "historia2 historia2 historia2 foto2" "footer footer footer footer";
@@ -280,7 +271,6 @@ img {
     grid-template-rows: auto auto auto auto auto auto;
     gap: 5px;
   }
-
   .subtitulo {
     grid-area: subtitulo;
   }
@@ -294,7 +284,6 @@ img {
     height: 25px;
     justify-content: center;
   }
-
   .planteltitular {
     display: grid;
     grid-template-areas: "subarq" "arqueros" "subdef" "defensores" "submed" "medios" "subdel" "delanteros";
@@ -302,7 +291,6 @@ img {
     grid-template-rows: auto auto auto auto auto auto auto auto;
     gap: 5px;
   }
-
   body {
     display: grid;
     grid-template-areas: "header" "section" "div" "footer";
@@ -391,4 +379,44 @@ img {
 
 .titulos {
   margin-top: 0px;
+}
+
+.shop {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+  justify-content: center;
+}
+.shop div {
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+  height: 300px;
+  width: 200px;
+  border-radius: 5px;
+  border-color: #ffcc00;
+}
+.shop div a {
+  color: rgb(0, 0, 74);
+  text-decoration: none;
+  background-color: #ffcc00;
+  font-weight: 800;
+}
+.shop div button {
+  font-size: 30px;
+  margin-top: 28px;
+  margin-left: 15px;
+  border: rgb(0, 0, 0);
+  background-color: #ffcc00;
+}
+.shop div button:hover {
+  transform: scale(1.08);
+  transition-duration: 0.35s;
+}
+.shop div img {
+  height: 200px;
+  width: 200px;
+  border-bottom: 5px;
+  border-color: #312f00;
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */
