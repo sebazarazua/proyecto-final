@@ -19,54 +19,61 @@ body{
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
     grid: 5px;
+    width: 100%;
+    height: auto;
 }
 header{
     grid-area: header;
 }
-.headershop{
-    grid-area: header;
-    
-}
+
 .shop{
     grid-area: div;
-}
-.shop{
-    display: grid;
-    grid-template-areas:
-    "camiseta titular"
-    "camiseta blanca"
-    "camiseta amarilla"
-    "camiseta alternativa"
-    "camiseta cuatro"
-    ;
-    grid-template-columns: 50%;
-    grid-template-rows: auto auto auto auto auto;
-    grid: 5px;
-}
-.camisetatitular{
-    grid-area:  camiseta titular;
-}
-.camisetaamarilla{
-    grid-area: camiseta amarilla;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    justify-content: center;
 
-}
-.camisetablanca{
-    grid-area: camiseta blanca;
+    div{
+        background-color: rgb(255, 255, 255);
+        margin: 5px;
+        height: 300px;
+        width: 200px;
+        border-radius: 5px;
+        border-color: $oro;
 
+        a{
+            color: $azul;
+            text-decoration: none;
+            background-color: $oro;
+            font-weight: 800;
 }
-.camisetaalternativa{
-    grid-area: camiseta alternativa;
+        button{
+            font-size: 30px;
+            margin-top: 28px;
+            margin-left: 15px;
+            border: rgb(0, 0, 0);
+            background-color: $oro;
+            &:hover{
+                transform: scale(1.08);
+        transition-duration: 0.35s;
+            }
 }
-.camisetacuatro{
-    grid-area: camiseta cuatro;
+        img{
+            height: 200px;
+            width: 200px;
+            border-bottom: 5px;
+            border-color: $orosec;
+            background-color: white;
+        }
+    }
 }
-
 .titulo{
     grid-area: titulo;
 }
 
 footer{
-    grid-area: footer;
+    grid-area:footer;
     img{
         width: 50px;
         height: 50px;
@@ -380,45 +387,4 @@ body{
 
 .titulos{
     margin-top: 0px
-}
-.shop{
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    width: auto;
-    justify-content: center;
-
-    div{
-        background-color: rgb(255, 255, 255);
-        margin: 5px;
-        height: 300px;
-        width: 200px;
-        border-radius: 5px;
-        border-color: $oro;
-
-        a{
-            color: $azul;
-            text-decoration: none;
-            background-color: $oro;
-            font-weight: 800;
-}
-        button{
-            font-size: 30px;
-            margin-top: 28px;
-            margin-left: 15px;
-            border: rgb(0, 0, 0);
-            background-color: $oro;
-            &:hover{
-                transform: scale(1.08);
-        transition-duration: 0.35s;
-            }
-}
-        img{
-            height: 200px;
-            width: 200px;
-            border-bottom: 5px;
-            border-color: $orosec;
-            background-color: white;
-        }
-    }
 }
